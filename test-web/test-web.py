@@ -10,7 +10,7 @@ obj = json.loads(json_data)
 
 PATH = "B:\chromedriver\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
-driver.get("http://localhost:3000/")
+driver.get("https://pwl03pwl118140183.herokuapp.com/")
 
 nama_input = driver.find_element_by_id('nama')
 username_input = driver.find_element_by_id('username')
