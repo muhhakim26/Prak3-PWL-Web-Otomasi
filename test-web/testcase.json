@@ -1,0 +1,72 @@
+[
+  {
+    "testcase_name": "Field username kosong",
+    "data": {
+      "nama":"Abdul Hakim",
+      "username": "",
+      "password": "12345678",
+      "repassword": "12345678"
+    },
+    "expected": "Username tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Username sudah digunakan",
+    "data": {
+      "nama":"Abdul Hakim",
+      "username": "muhhakim",
+      "password": "12345678",
+      "repassword": "12345678"
+    },
+    "expected": "Username sudah dipakai"
+  },
+  {
+    "testcase_name": "Field password kosong",
+    "data": {
+      "nama":"Abdul Hakim",
+      "username": "muhhakim",
+      "password": "",
+      "repassword": "12345678"
+    },
+    "expected": "Password tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Password kurang dari 8 karakter",
+    "data": {
+      "nama":"Abdul Hakim",
+      "username": "muhhakim",
+      "password": "1234567",
+      "repassword": "1234567"
+    },
+    "expected": "Password harus terdiri dari 8 karakter atau lebih"
+  },
+  {
+    "testcase_name": "Field konfirmasi password kosong",
+    "data": {
+      "nama":"Abdul Hakim",
+      "username": "muhhakim",
+      "password": "12345678",
+      "repassword": ""
+    },
+    "expected": "Repassword tidak boleh kosong"
+  },
+  {
+    "testcase_name": "Password konfirmasi tidak cocok",
+    "data": {
+      "nama":"Abdul Hakim",
+      "username": "muhhakim",
+      "password": "12345678",
+      "repassword": "123456781"
+    },
+    "expected": "Password dan Repassword tidak cocok"
+  },
+  {
+    "testcase_name": "Seluruh field terisi dengan benar",
+    "data": {
+      "nama":"Abdul Hakim",
+      "username": "muhhakim",
+      "password": "12345678",
+      "repassword": "12345678"
+    },
+    "expected": "Berhasil Registrasi"
+  }
+]
